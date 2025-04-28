@@ -39,7 +39,7 @@ async function cargarDatos() {
             if (producto) {
                 let html = "";
                 for (const campo in producto) {
-                    if (campo !== "Stock Mínimo" && producto[campo]) {
+                    if (campo !== "Stock Minimo" && producto[campo]) {
                         html += `<p><strong>${campo}:</strong> ${producto[campo]}</p>`;
                     }
                 }
