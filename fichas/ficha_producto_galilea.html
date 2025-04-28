@@ -39,7 +39,7 @@ async function cargarDatos() {
         if (columnas[0] === codigo) {
             let html = "";
             for (let i = 1; i < columnas.length; i++) {
-                if (encabezados[i] && encabezados[i] !== "Stock Mínimo") {
+                if (encabezados[i]) {
                     html += `<p><strong>${encabezados[i]}:</strong> ${columnas[i]}</p>`;
                 }
             }
@@ -49,7 +49,6 @@ async function cargarDatos() {
     }
     document.getElementById("contenido").innerText = "Producto no encontrado.";
 }
-
 cargarDatos();
 </script>
 </body>
