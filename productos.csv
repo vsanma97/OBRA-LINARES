@@ -1,4 +1,4 @@
-Codigo,Descripcion,Estado de stock,Stock Minimo,Cantidad stock,Última etapa comprada,Etapa en ejecución,Cantidad presupuestada etapa,Cantidad comprada,Cantidad recibida,Cantidad entregada semanalmente,Duración del producto
+﻿Codigo,Descripcion,Estado de stock,Stock Minimo,Cantidad stock,Última etapa comprada,Etapa en ejecución,Cantidad presupuestada etapa,Cantidad comprada,Cantidad recibida,Cantidad entregada semanalmente,Duración del producto
 1270387.0,ACRIZINC CAOBA (25 KG) 1 TINETA,SOBRE NIVEL CRÍTICO Y PARA MÁS DE DOS SEMANAS,1.25,1.7999999999992724,20.0,20.0,0.0,3.5,3.5,0.07846153846153846,24 MESES
 1194652.0,ACRIZINC NEGRO 1 GAL,SOBRE NIVEL CRÍTICOY SIN ENTREGA LOS ÚLTIMOS 90 DÍAS,3.75,20.999999523162842,21.0,21.0,0.0,13.0,13.0,0.0,24 MESES
 1269909.0,ADHESIVO AC EN PASTA 25 KG,BAJO NIVEL CRITICO Y PARA MÁS DE DOS SEMANAS,16.5,16.0,21.0,21.0,59.5,63.33,63.33,1.0,6 MESES
