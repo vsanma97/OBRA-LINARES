@@ -30,14 +30,14 @@ async function cargarDatos() {
     const data = await response.text();
     const filas = data.split("\n").slice(1);
 
-    const columnasTitulos = ["Codigo", "Descripcion", "Estado de stock", "Cantidad stock", "Última etapa comprada", "Etapa en ejecución", "Cantidad presupuestada etapa", "Cantidad recibida", "Cantidad entregada semanalmente", "Duración del producto"]; // Ajusta aquí
+    const columnasTitulos = ["Codigo", "Descripcion", "Estado de stock", "Cantidad stock", "Última etapa comprada", "Etapa en ejecución", "Cantidad presupuestada etapa", "Cantidad recibida", "Cantidad entregada semanalmente", "Duración del producto"];
 
     for (const fila of filas) {
         const columnas = fila.split(",");
         if (columnas[0] === codigo) {
             let html = "";
             for (let i = 1; i < columnas.length; i++) {
-                if (columnasTitulos[i] && columnasTitulos[i] !== "Stock Mínimo") {
+                if (columnasTitulos[i] && columnasTitulos[i] !== "Stock Minimo") {
                     html += `<p><strong>${columnasTitulos[i]}:</strong> ${columnas[i]}</p>`;
                 }
             }
