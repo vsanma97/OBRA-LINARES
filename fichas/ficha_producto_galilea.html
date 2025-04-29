@@ -39,8 +39,12 @@ async function cargarDatos() {
             if (producto) {
                 let html = "";
                 for (const campo in producto) {
-                    if (campo !== "Codigo" && campo !== "Stock Minimo" && producto[campo]) {
-                        html += `<p><strong>${campo}:</strong> ${producto[campo]}</p>`;
+                    if (campo !== "Codigo" && campo !== "Stock Mínimo" && producto[campo]) {
+                        let valor = producto[campo];
+                        if (campo === "Última etapa comprada" || campo === "Etapa en ejecución") {
+                            valor = parseInt(valor); // Mostrar solo número entero
+                        }
+                        html += `<p><strong>${campo}:</strong> ${valor}</p>`;
                     }
                 }
                 document.getElementById("contenido").innerHTML = html;
